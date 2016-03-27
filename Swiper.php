@@ -129,27 +129,27 @@ class Swiper extends Widget
      * @see \romkaChev\yii2\swiper\Swiper::$behaviors
      * @see \romkaChev\yii2\swiper\Swiper::$parallaxOptions
      *
-     * @see \romkaChev\yii2\swiper\Swiper::renderBehaviourParallax
+     * @see \romkaChev\yii2\swiper\Swiper::renderBehaviorParallax
      */
     const BEHAVIOR_PARALLAX = 'parallax';
     /**
-     * @see \romkaChev\yii2\swiper\Swiper::renderBehaviourParallax
+     * @see \romkaChev\yii2\swiper\Swiper::renderBehaviorParallax
      */
     const PARALLAX_BACKGROUND = 'background';
     /**
-     * @see \romkaChev\yii2\swiper\Swiper::renderBehaviourParallax
+     * @see \romkaChev\yii2\swiper\Swiper::renderBehaviorParallax
      */
     const PARALLAX_TRANSITION = 'transition';
     /**
-     * @see \romkaChev\yii2\swiper\Swiper::renderBehaviourParallax
+     * @see \romkaChev\yii2\swiper\Swiper::renderBehaviorParallax
      */
     const PARALLAX_TRANSITION_X = 'transitionX';
     /**
-     * @see \romkaChev\yii2\swiper\Swiper::renderBehaviourParallax
+     * @see \romkaChev\yii2\swiper\Swiper::renderBehaviorParallax
      */
     const PARALLAX_TRANSITION_Y = 'transitionY';
     /**
-     * @see \romkaChev\yii2\swiper\Swiper::renderBehaviourParallax
+     * @see \romkaChev\yii2\swiper\Swiper::renderBehaviorParallax
      */
     const PARALLAX_DURATION = 'duration';
     /**
@@ -176,7 +176,7 @@ class Swiper extends Widget
      * @see  \romkaChev\yii2\swiper\Swiper::PARALLAX_TRANSITION_Y
      * @see  \romkaChev\yii2\swiper\Swiper::PARALLAX_DURATION
      *
-     * @see  \romkaChev\yii2\swiper\Swiper::renderBehaviourParallax
+     * @see  \romkaChev\yii2\swiper\Swiper::renderBehaviorParallax
      */
     public $parallaxOptions = [];
 
@@ -187,7 +187,7 @@ class Swiper extends Widget
      * @see \romkaChev\yii2\swiper\Swiper::$behaviors
      * @see \romkaChev\yii2\swiper\Swiper::$paginationOptions
      *
-     * @see \romkaChev\yii2\swiper\Swiper::renderBehaviourPagination
+     * @see \romkaChev\yii2\swiper\Swiper::renderBehaviorPagination
      */
     const BEHAVIOR_PAGINATION = 'pagination';
     /**
@@ -218,7 +218,7 @@ class Swiper extends Widget
      * @see \romkaChev\yii2\swiper\Swiper::$behaviors
      * @see \romkaChev\yii2\swiper\Swiper::$scrollbarOptions
      *
-     * @see \romkaChev\yii2\swiper\Swiper::renderBehaviourScrollbar
+     * @see \romkaChev\yii2\swiper\Swiper::renderBehaviorScrollbar
      */
     const BEHAVIOR_SCROLLBAR = 'scrollbar';
     /**
@@ -249,7 +249,7 @@ class Swiper extends Widget
      * @see \romkaChev\yii2\swiper\Swiper::$behaviors
      * @see \romkaChev\yii2\swiper\Swiper::$nextButtonOptions
      *
-     * @see \romkaChev\yii2\swiper\Swiper::renderBehaviourNextButton
+     * @see \romkaChev\yii2\swiper\Swiper::renderBehaviorNextButton
      */
     const BEHAVIOR_NEXT_BUTTON = 'nextButton';
     /**
@@ -280,7 +280,7 @@ class Swiper extends Widget
      * @see \romkaChev\yii2\swiper\Swiper::$behaviors
      * @see \romkaChev\yii2\swiper\Swiper::$prevButtonOptions
      *
-     * @see \romkaChev\yii2\swiper\Swiper::renderBehaviourPrevButton
+     * @see \romkaChev\yii2\swiper\Swiper::renderBehaviorPrevButton
      */
     const BEHAVIOR_PREV_BUTTON = 'prevButton';
     /**
@@ -310,7 +310,7 @@ class Swiper extends Widget
      *
      * @see \romkaChev\yii2\swiper\Swiper::$behaviors
      *
-     * @see \romkaChev\yii2\swiper\Swiper::setBehaviourRtl
+     * @see \romkaChev\yii2\swiper\Swiper::setBehaviorRtl
      */
     const BEHAVIOR_RTL = 'rtl';
 
@@ -381,15 +381,15 @@ class Swiper extends Widget
     public function run()
     {
         $contentPieces = [
-            $this->renderBehaviourParallax(),
+            $this->renderBehaviorParallax(),
             $this->renderWrapper(),
-            $this->renderBehaviourPagination(),
-            $this->renderBehaviourScrollbar(),
-            $this->renderBehaviourNextButton(),
-            $this->renderBehaviourPrevButton()
+            $this->renderBehaviorPagination(),
+            $this->renderBehaviorScrollbar(),
+            $this->renderBehaviorNextButton(),
+            $this->renderBehaviorPrevButton()
         ];
 
-        $this->setBehaviourRtl();
+        $this->setBehaviorRtl();
 
         $this->registerClientScript();
 
@@ -561,16 +561,16 @@ class Swiper extends Widget
     }
 
     /**
-     * Checks if there is invalid behaviour given.
+     * Checks if there is invalid behavior given.
      * If given, then throws exception
      *
      * @throws \InvalidArgumentException
      */
     protected function checkBehaviors()
     {
-        foreach ($this->behaviors as $behaviour) {
-            if (!in_array($behaviour, $this->availableBehaviors)) {
-                throw new \InvalidArgumentException("Unknown behaviour {$behaviour}");
+        foreach ($this->behaviors as $behavior) {
+            if (!in_array($behavior, $this->availableBehaviors)) {
+                throw new \InvalidArgumentException("Unknown behavior {$behavior}");
             }
         }
     }
@@ -595,7 +595,7 @@ class Swiper extends Widget
      *
      * @return string
      */
-    protected function renderBehaviourParallax()
+    protected function renderBehaviorParallax()
     {
         if (!in_array(self::BEHAVIOR_PARALLAX, $this->behaviors)) {
             return '';
@@ -624,11 +624,11 @@ class Swiper extends Widget
      * @see \romkaChev\yii2\swiper\Swiper::BEHAVIOR_PAGINATION
      * @see \romkaChev\yii2\swiper\Swiper::$paginationOptions
      *
-     * @see \romkaChev\yii2\swiper\Swiper::renderBehaviourScrollbar
+     * @see \romkaChev\yii2\swiper\Swiper::renderBehaviorScrollbar
      *
      * @return string
      */
-    protected function renderBehaviourPagination()
+    protected function renderBehaviorPagination()
     {
         if (in_array(self::BEHAVIOR_PAGINATION, $this->behaviors)) {
             $paginationOptions = $this->paginationOptions;
@@ -655,11 +655,11 @@ class Swiper extends Widget
      * @see \romkaChev\yii2\swiper\Swiper::BEHAVIOR_SCROLLBAR
      * @see \romkaChev\yii2\swiper\Swiper::$scrollbarOptions
      *
-     * @see \romkaChev\yii2\swiper\Swiper::renderBehaviourPagination
+     * @see \romkaChev\yii2\swiper\Swiper::renderBehaviorPagination
      *
      * @return string
      */
-    protected function renderBehaviourScrollbar()
+    protected function renderBehaviorScrollbar()
     {
 
         if (in_array(self::BEHAVIOR_SCROLLBAR, $this->behaviors)) {
@@ -687,11 +687,11 @@ class Swiper extends Widget
      * @see \romkaChev\yii2\swiper\Swiper::BEHAVIOR_NEXT_BUTTON
      * @see \romkaChev\yii2\swiper\Swiper::$nextButtonOptions
      *
-     * @see \romkaChev\yii2\swiper\Swiper::renderBehaviourPrevButton
+     * @see \romkaChev\yii2\swiper\Swiper::renderBehaviorPrevButton
      *
      * @return string
      */
-    protected function renderBehaviourNextButton()
+    protected function renderBehaviorNextButton()
     {
 
         if (in_array(self::BEHAVIOR_NEXT_BUTTON, $this->behaviors)) {
@@ -719,11 +719,11 @@ class Swiper extends Widget
      * @see \romkaChev\yii2\swiper\Swiper::BEHAVIOR_PREV_BUTTON
      * @see \romkaChev\yii2\swiper\Swiper::$prevButtonOptions
      *
-     * @see \romkaChev\yii2\swiper\Swiper::renderBehaviourNextButton
+     * @see \romkaChev\yii2\swiper\Swiper::renderBehaviorNextButton
      *
      * @return string
      */
-    protected function renderBehaviourPrevButton()
+    protected function renderBehaviorPrevButton()
     {
 
         if (in_array(self::BEHAVIOR_PREV_BUTTON, $this->behaviors)) {
@@ -752,7 +752,7 @@ class Swiper extends Widget
      *
      * @return Swiper
      */
-    protected function setBehaviourRtl()
+    protected function setBehaviorRtl()
     {
         if (in_array(self::BEHAVIOR_RTL, $this->behaviors)) {
             $this->containerOptions["dir"] = 'rtl';
