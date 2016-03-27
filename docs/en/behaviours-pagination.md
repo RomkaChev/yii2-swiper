@@ -1,6 +1,6 @@
 # Pagination
 
-To connect these buttons you must declare behaviour `pagination` in field `\romkaChev\yii2\swiper\Swiper::$behaviours`, 
+To connect these buttons you must declare behavior `pagination` in field `\romkaChev\yii2\swiper\Swiper::$behaviors`, 
 otherwise pagination will not be rendered.
 
 > Note: to pagination was clickable, you must specify `paginationClickable = true` 
@@ -18,7 +18,7 @@ echo Swiper::widget( [
     'Slide 2',
     'Slide 3'
   ],
-  'behaviours'    => [
+  'behaviors'    => [
     'pagination' // Declaration of pagination
   ],
   'pluginOptions' => [
@@ -33,7 +33,7 @@ echo Swiper::widget( [
     'Slide 2',
     'Slide 3'
   ],
-  'behaviours'    => [
+  'behaviors'    => [
     Swiper::BEHAVIOUR_PAGINATION // Declaration of pagination
   ],
   'pluginOptions' => [
@@ -61,7 +61,7 @@ echo Swiper::widget( [
     'Slide 4',
     'Slide 5'
   ],
-  'behaviours'    => [
+  'behaviors'    => [
     'pagination' // Declaration of pagination
   ],
   'paginationOptions'    => [

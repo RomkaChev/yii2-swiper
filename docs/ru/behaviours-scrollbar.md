@@ -1,6 +1,6 @@
 # Скроллбар
 
-Для подключения в слайдер скроллбара необходимо объявить поведение `scrollbar` в поле `\romkaChev\yii2\swiper\Swiper::$behaviours`, иначе скроллбар не будет отрендерен.
+Для подключения в слайдер скроллбара необходимо объявить поведение `scrollbar` в поле `\romkaChev\yii2\swiper\Swiper::$behaviors`, иначе скроллбар не будет отрендерен.
 
 Пример:
 
@@ -14,7 +14,7 @@ echo Swiper::widget( [
     'Slide 2',
     'Slide 3'
   ],
-  'behaviours'    => [
+  'behaviors'    => [
     'scrollbar' // Объявление скроллбара
   ]
 ] );
@@ -26,7 +26,7 @@ echo Swiper::widget( [
     'Slide 2',
     'Slide 3'
   ],
-  'behaviours'    => [
+  'behaviors'    => [
     Swiper::BEHAVIOUR_SCROLLBAR // Объявление скроллбара
   ]
 ] );
@@ -51,7 +51,7 @@ echo Swiper::widget( [
     'Slide 4',
     'Slide 5'
   ],
-  'behaviours'    => [
+  'behaviors'    => [
     'scrollbar' // Объявление скроллбара
   ],
   'scrollbarOptions'    => [

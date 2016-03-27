@@ -15,7 +15,7 @@ echo Swiper::widget( [
                 'Vertical Slide 4',
                 'Vertical Slide 5',
             ],
-            'behaviours' => [
+            'behaviors' => [
                 Swiper::BEHAVIOUR_PAGINATION
             ],
             'pluginOptions' => [
@@ -27,7 +27,7 @@ echo Swiper::widget( [
         'Horizontal Slide 3',
         'Horizontal Slide 4',
     ],
-    'behaviours'    => [
+    'behaviors'    => [
         Swiper::BEHAVIOUR_PAGINATION
     ],
     'pluginOptions' => [

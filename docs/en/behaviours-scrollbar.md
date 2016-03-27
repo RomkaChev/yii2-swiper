@@ -1,6 +1,6 @@
 # Scrollbar
 
-To connect these buttons you must declare behaviour `scrollbar` in field `\romkaChev\yii2\swiper\Swiper::$behaviours`, 
+To connect these buttons you must declare behavior `scrollbar` in field `\romkaChev\yii2\swiper\Swiper::$behaviors`, 
 otherwise scrollbar will not be rendered.
 
 Example:
@@ -15,7 +15,7 @@ echo Swiper::widget( [
     'Slide 2',
     'Slide 3'
   ],
-  'behaviours'    => [
+  'behaviors'    => [
     'scrollbar' // Declaration of scrollbar
   ]
 ] );
@@ -27,7 +27,7 @@ echo Swiper::widget( [
     'Slide 2',
     'Slide 3'
   ],
-  'behaviours'    => [
+  'behaviors'    => [
     Swiper::BEHAVIOUR_SCROLLBAR // Declaration of scrollbar
   ]
 ] );
@@ -52,7 +52,7 @@ echo Swiper::widget( [
     'Slide 4',
     'Slide 5'
   ],
-  'behaviours'    => [
+  'behaviors'    => [
     'scrollbar' // Declaration of scrollbar
   ],
   'scrollbarOptions'    => [

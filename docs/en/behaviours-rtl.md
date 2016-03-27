@@ -1,8 +1,8 @@
 # Display from right to left
 
 To display the content from right to left, you must declare
-behavior `rtl` in field `romkaChev\yii2\swiper\Swiper::$behaviours`, 
-otherwise behaviour will not be applied.
+behavior `rtl` in field `romkaChev\yii2\swiper\Swiper::$behaviors`, 
+otherwise behavior will not be applied.
 
 This behavior only adds an option `'dir' = 'rtl'` to the container-tag of widget.
 
@@ -20,7 +20,7 @@ echo Swiper::widget( [
     'Slide 2',
     'Slide 3'
   ],
-  'behaviours' => [
+  'behaviors' => [
     'rtl'
   ]
 ] );
@@ -32,7 +32,7 @@ echo Swiper::widget( [
     'Slide 2',
     'Slide 3'
   ],
-  'behaviours' => [
+  'behaviors' => [
     Swiper::BEHAVIOUR_RTL
   ]
 ] );

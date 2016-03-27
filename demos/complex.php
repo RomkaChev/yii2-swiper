@@ -39,7 +39,7 @@ echo Swiper::widget( [
                     ],
                     //@formatter:on
                 ],
-                'behaviours'      => [
+                'behaviors'      => [
                     Swiper::BEHAVIOUR_PARALLAX,
                 ],
                 'parallaxOptions' => [
@@ -84,7 +84,7 @@ echo Swiper::widget( [
                     ],
                     //@formatter:on
                 ],
-                'behaviours'        => [
+                'behaviors'        => [
                     Swiper::BEHAVIOUR_PARALLAX,
                     Swiper::BEHAVIOUR_RTL
                 ],
@@ -131,7 +131,7 @@ echo Swiper::widget( [
                     ],
                     //@formatter:on
                 ],
-                'behaviours'        => [
+                'behaviors'        => [
                     Swiper::BEHAVIOUR_PARALLAX,
                 ],
                 'parallaxOptions'   => [
@@ -151,7 +151,7 @@ echo Swiper::widget( [
             'hash'    => 'slide03'
         ]
     ],
-    'behaviours'        => [
+    'behaviors'        => [
         Swiper::BEHAVIOUR_PAGINATION,
         Swiper::BEHAVIOUR_NEXT_BUTTON,
         Swiper::BEHAVIOUR_PREV_BUTTON,

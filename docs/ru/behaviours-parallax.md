@@ -67,14 +67,14 @@ echo Swiper::widget( [
       ]
     ]
   ],
-  'behaviours' => [
+  'behaviors' => [
     'parallax' // Объявление поведения "параллакс"
   ],
   'parallaxOptions' => [ // Настраиваем параллакс
     'background' => 'http://placehold.it/2536x1080',
     'transition' => '-23%',
     'data' => [
-      'duration' => '750' // Указываем свойство напрямую, в обход алиасов
+      'duration' => '750' // Указываем свойсво напрямую, в обход алиасов
     ]
   ],
   'pluginOptions' => [

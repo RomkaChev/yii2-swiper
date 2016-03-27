@@ -1,24 +1,24 @@
 # Overview of widget
 
-This widget uses Swiper version v3.0.4+, provides working with [parallax](behaviours-parallax.md), 
+This widget uses Swiper version v3.0.4+, provides working with [parallax](behaviors-parallax.md), 
 [lazy-loading](usage-lazy-loading.md) of images and other tools of original slider.
 
-## Behaviours concept
+## Behaviors concept
 
-Widget for rendering controls uses the concept of **behaviours**. 
+Widget for rendering controls uses the concept of **behaviors**. 
 
-Behaviour     | Where configuring            | Description                                                                       
+Behavior     | Where configuring            | Description                                                                       
 ------------- | ---------------------------- | -------------------------------------------------------------------------------
-`pagination`  | `Swiper::$paginationOptions` | Responsible for rendering of [pagination](behaviours-pagination.md)                  
-`scrollbar`   | `Swiper::$scrollbarOptions`  | Responsible for rendering of [scrollbar](behaviours-scrollbar.md)                  
-`prevButton`  | `Swiper::$prevButtonOptions` | Responsible for rendering of button "[prev](behaviours-navigation-buttons.md)"
-`nextButton`  | `Swiper::$nextButtonOptions` | Responsible for rendering of button "[next](behaviours-navigation-buttons.md)" 
-`parallax`    | `Swiper::$parallaxOptions`   | **Partially** responsible for rendering of [parallax](behaviours-parallax.md)      
-`rtl`         | -                            | Responsible for displaying from [right to left](behaviours-rtl.md)            
+`pagination`  | `Swiper::$paginationOptions` | Responsible for rendering of [pagination](behaviors-pagination.md)                  
+`scrollbar`   | `Swiper::$scrollbarOptions`  | Responsible for rendering of [scrollbar](behaviors-scrollbar.md)                  
+`prevButton`  | `Swiper::$prevButtonOptions` | Responsible for rendering of button "[prev](behaviors-navigation-buttons.md)"
+`nextButton`  | `Swiper::$nextButtonOptions` | Responsible for rendering of button "[next](behaviors-navigation-buttons.md)" 
+`parallax`    | `Swiper::$parallaxOptions`   | **Partially** responsible for rendering of [parallax](behaviors-parallax.md)      
+`rtl`         | -                            | Responsible for displaying from [right to left](behaviors-rtl.md)            
 
-So, to display one of these behaviours you must:
+So, to display one of these behaviors you must:
 
-* Specify it in `Swiper::$behaviours`
+* Specify it in `Swiper::$behaviors`
 * [Optional] Customize it
 
 ## Configuring slides

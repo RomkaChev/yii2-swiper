@@ -20,7 +20,7 @@ echo Swiper::widget( [
         [ 'background' => 'http://lorempixel.com/1200/1200/nature/9' ],
         [ 'background' => 'http://lorempixel.com/1200/1200/nature/10' ],
     ],
-    'behaviours'        => [
+    'behaviors'        => [
         Swiper::BEHAVIOUR_NEXT_BUTTON,
         Swiper::BEHAVIOUR_PREV_BUTTON
     ],
