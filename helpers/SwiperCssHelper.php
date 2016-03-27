@@ -21,10 +21,10 @@ class SwiperCssHelper
      *
      * @return string
      */
-    public static function mergeStyleAndBackground( $background, $style )
+    public static function mergeStyleAndBackground($background, $style)
     {
-        $style = trim( $style, '; ' ) . "; background-image:url({$background});";
-        $style = trim( $style, '; ' );
+        $style = trim($style, '; ') . "; background-image:url({$background});";
+        $style = trim($style, '; ');
 
         return $style;
     }
@@ -37,12 +37,12 @@ class SwiperCssHelper
      *
      * @return string|null
      */
-    public static function getBackgroundUrl( $style )
+    public static function getBackgroundUrl($style)
     {
         $patten = '/background(-image)?\s*:\s*url\s*\((?<source>[^\)]*)/';
-        preg_match( $patten, $style, $backgroundImage );
+        preg_match($patten, $style, $backgroundImage);
 
-        return trim( ArrayHelper::getValue( $backgroundImage, 'source', null ) );
+        return trim(ArrayHelper::getValue($backgroundImage, 'source', null));
     }
 
 }
