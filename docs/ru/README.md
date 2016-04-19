@@ -13,11 +13,11 @@
 
 ## Поведения
 
-* [Пагинация](behaviours-pagination.md)
-* [Скроллбар](behaviours-scrollbar.md)
-* [Кнопки "предыдущий" и "следующий"](behaviours-navigation-buttons.md)
-* [Параллакс](behaviours-parallax.md)
-* [Отображение справа налево](behaviours-rtl.md)
+* [Пагинация](behaviors-pagination.md)
+* [Скроллбар](behaviors-scrollbar.md)
+* [Кнопки "предыдущий" и "следующий"](behaviors-navigation-buttons.md)
+* [Параллакс](behaviors-parallax.md)
+* [Отображение справа налево](behaviors-rtl.md)
 
 ## Опции
 

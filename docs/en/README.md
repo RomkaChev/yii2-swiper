@@ -11,13 +11,13 @@
 * [Effects](usage-effects.md)
 * [Lazy-loading](usage-lazy-loading.md)
 
-## Behaviours
+## Behaviors
 
-* [Pagination](behaviours-pagination.md)
-* [Scrollbar](behaviours-scrollbar.md)
-* [Buttons "prev" and "next"](behaviours-navigation-buttons.md)
-* [Parallax](behaviours-parallax.md)
-* [Displaying from right to left](behaviours-rtl.md)
+* [Pagination](behaviors-pagination.md)
+* [Scrollbar](behaviors-scrollbar.md)
+* [Buttons "prev" and "next"](behaviors-navigation-buttons.md)
+* [Parallax](behaviors-parallax.md)
+* [Displaying from right to left](behaviors-rtl.md)
 
 ## Options
 

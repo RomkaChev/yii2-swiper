@@ -1,6 +1,6 @@
 # Buttons "prev" and "next"
 
-To connect these buttons, you must declare behaviours `prevButton` and `nextButton` in field `\romkaChev\yii2\swiper\Swiper::$behaviours`, 
+To connect these buttons, you must declare behaviors `prevButton` and `nextButton` in field `\romkaChev\yii2\swiper\Swiper::$behaviors`, 
 otherwise the buttons will not be rendered.
 
 Example:
@@ -15,7 +15,7 @@ echo Swiper::widget( [
     'Slide 2',
     'Slide 3'
   ],
-  'behaviours' => [
+  'behaviors' => [
     'prevButton',
     'nextButton'
   ]
@@ -28,7 +28,7 @@ echo Swiper::widget( [
     'Slide 2',
     'Slide 3'
   ],
-  'behaviours' => [
+  'behaviors' => [
     Swiper::BEHAVIOUR_PREV_BUTTON,
     Swiper::BEHAVIOUR_NEXT_BUTTON
   ]
@@ -52,7 +52,7 @@ echo Swiper::widget( [
     'Slide 2',
     'Slide 3'
   ],
-  'behaviours' => [
+  'behaviors' => [
     'prevButton',
     'nextButton'
   ],

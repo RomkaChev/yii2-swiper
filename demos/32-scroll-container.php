@@ -26,7 +26,7 @@ echo Swiper::widget( [
             //@formatter:on
         ],
     ],
-    'behaviours'    => [
+    'behaviors'    => [
         Swiper::BEHAVIOUR_SCROLLBAR,
     ],
     'pluginOptions' => [

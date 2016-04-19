@@ -17,7 +17,7 @@ echo Swiper::widget( [
         'Slide 9',
         'Slide 10',
     ],
-    'behaviours'    => [
+    'behaviors'    => [
         Swiper::BEHAVIOUR_PAGINATION,
         Swiper::BEHAVIOUR_NEXT_BUTTON,
         Swiper::BEHAVIOUR_PREV_BUTTON,

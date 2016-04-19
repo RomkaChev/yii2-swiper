@@ -31,7 +31,7 @@ echo Swiper::widget( [
         ],
         //@formatter:on
     ],
-    'behaviours'      => [
+    'behaviors'      => [
         Swiper::BEHAVIOUR_PAGINATION,
         Swiper::BEHAVIOUR_NEXT_BUTTON,
         Swiper::BEHAVIOUR_PREV_BUTTON,

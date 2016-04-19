@@ -1,7 +1,7 @@
 # Отображение справа налево
 
 Для отображения контента справа налево необходимо объявить 
-поведение `rtl` в поле `romkaChev\yii2\swiper\Swiper::$behaviours`, иначе поведение не будет применено.
+поведение `rtl` в поле `romkaChev\yii2\swiper\Swiper::$behaviors`, иначе поведение не будет применено.
 
 Данное поведение всего лишь добавляет опцию `'dir' = 'rtl'` в тег-контейнер виджета.
 
@@ -19,7 +19,7 @@ echo Swiper::widget( [
     'Slide 2',
     'Slide 3'
   ],
-  'behaviours' => [
+  'behaviors' => [
     'rtl'
   ]
 ] );
@@ -31,7 +31,7 @@ echo Swiper::widget( [
     'Slide 2',
     'Slide 3'
   ],
-  'behaviours' => [
+  'behaviors' => [
     Swiper::BEHAVIOUR_RTL
   ]
 ] );

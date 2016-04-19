@@ -17,7 +17,7 @@ echo Swiper::widget( [
         [ 'background' => 'http://lorempixel.com/600/600/nature/9' ],
         [ 'background' => 'http://lorempixel.com/600/600/nature/10' ],
     ],
-    'behaviours'    => [
+    'behaviors'    => [
         Swiper::BEHAVIOUR_PAGINATION,
     ],
     'pluginOptions' => [

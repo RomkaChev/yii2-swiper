@@ -1,6 +1,6 @@
 # Обзор виджета
 
-Данный виджет использует версию Swiper v3.0.4+, дает возможность работы с [параллаксом](behaviours-parallax.md), 
+Данный виджет использует версию Swiper v3.0.4+, дает возможность работы с [параллаксом](behaviors-parallax.md), 
 [lazy-loading](usage-lazy-loading.md)'ом изображений и другими возможностями оригинального слайдера.
 
 ## Концепция поведений
@@ -9,16 +9,16 @@
 
 Поведение     | Где настраивается            | Описание                                                                       
 ------------- | ---------------------------- | -------------------------------------------------------------------------------
-`pagination`  | `Swiper::$paginationOptions` | Отвечает за отображение [пагинации](behaviours-pagination.md)                  
-`scrollbar`   | `Swiper::$scrollbarOptions`  | Отвечает за отображение [скроллбара](behaviours-scrollbar.md)                  
-`prevButton`  | `Swiper::$prevButtonOptions` | Отвечает за отображение кнопки "[предыдущий](behaviours-navigation-buttons.md)"
-`nextButton`  | `Swiper::$nextButtonOptions` | Отвечает за отображение кнопки "[следующий](behaviours-navigation-buttons.md)" 
-`parallax`    | `Swiper::$parallaxOptions`   | **Частично** отвечает за отображение [параллакса](behaviours-parallax.md)      
-`rtl`         | -                            | Отвечает за отображение контента [справа налево](behaviours-rtl.md)            
+`pagination`  | `Swiper::$paginationOptions` | Отвечает за отображение [пагинации](behaviors-pagination.md)                  
+`scrollbar`   | `Swiper::$scrollbarOptions`  | Отвечает за отображение [скроллбара](behaviors-scrollbar.md)                  
+`prevButton`  | `Swiper::$prevButtonOptions` | Отвечает за отображение кнопки "[предыдущий](behaviors-navigation-buttons.md)"
+`nextButton`  | `Swiper::$nextButtonOptions` | Отвечает за отображение кнопки "[следующий](behaviors-navigation-buttons.md)" 
+`parallax`    | `Swiper::$parallaxOptions`   | **Частично** отвечает за отображение [параллакса](behaviors-parallax.md)      
+`rtl`         | -                            | Отвечает за отображение контента [справа налево](behaviors-rtl.md)            
 
 Таким образом, чтобы отобразить у слайдера одно из поведений, нужно:
 
-* Обявить его в `Swiper::$behaviours`
+* Обявить его в `Swiper::$behaviors`
 * [Опционально] Настроить его
 
 ## Настройка слайдов

@@ -1,6 +1,6 @@
 # Пагинация
 
-Для подключения в слайдер пагинации необходимо объявить поведение `pagination` в поле `\romkaChev\yii2\swiper\Swiper::$behaviours`, иначе пагинация не будет отрендерена.
+Для подключения в слайдер пагинации необходимо объявить поведение `pagination` в поле `\romkaChev\yii2\swiper\Swiper::$behaviors`, иначе пагинация не будет отрендерена.
 
 > Заметьте: чтобы пагинация была кликабельной, необходимо указать `paginationClickable = true` 
   в поле `\romkaChev\yii2\swiper\Swiper::$pluginOptions`
@@ -17,7 +17,7 @@ echo Swiper::widget( [
     'Slide 2',
     'Slide 3'
   ],
-  'behaviours'    => [
+  'behaviors'    => [
     'pagination' // Объявление пагинации
   ],
   'pluginOptions' => [
@@ -32,7 +32,7 @@ echo Swiper::widget( [
     'Slide 2',
     'Slide 3'
   ],
-  'behaviours'    => [
+  'behaviors'    => [
     Swiper::BEHAVIOUR_PAGINATION // Объявление пагинации
   ],
   'pluginOptions' => [
@@ -59,7 +59,7 @@ echo Swiper::widget( [
     'Slide 4',
     'Slide 5'
   ],
-  'behaviours'    => [
+  'behaviors'    => [
     'pagination' // Объявление пагинации
   ],
   'paginationOptions'    => [

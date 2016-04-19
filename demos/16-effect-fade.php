@@ -12,7 +12,7 @@ echo Swiper::widget( [
         [ 'background' => 'http://lorempixel.com/1000/1000/nightlife/4' ],
         [ 'background' => 'http://lorempixel.com/1000/1000/nightlife/5' ],
     ],
-    'behaviours'        => [
+    'behaviors'        => [
         Swiper::BEHAVIOUR_PAGINATION,
         Swiper::BEHAVIOUR_NEXT_BUTTON,
         Swiper::BEHAVIOUR_PREV_BUTTON

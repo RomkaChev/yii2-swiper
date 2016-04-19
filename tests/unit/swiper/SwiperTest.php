@@ -9,14 +9,14 @@ use romkaChev\yii2\swiper\tests\unit\BaseTestCase;
 class SwiperTest extends BaseTestCase
 {
 
-    public function testInvalidBehaviour()
+    public function testInvalidBehavior()
     {
-        $this->setExpectedException( '\InvalidArgumentException', 'Unknown behaviour badBehaviour' );
+        $this->setExpectedException( '\InvalidArgumentException', 'Unknown behavior badBehavior' );
 
         new Swiper( [
-            'behaviours' => [
+            'behaviors' => [
                 Swiper::BEHAVIOUR_PAGINATION,
-                'badBehaviour'
+                'badBehavior'
             ]
         ] );
     }

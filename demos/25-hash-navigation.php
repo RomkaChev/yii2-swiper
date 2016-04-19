@@ -17,7 +17,7 @@ echo Swiper::widget( [
         [ 'content' => 'Slide 09', 'hash' => 'slide09' ],
         [ 'content' => 'Slide 10', 'hash' => 'slide10' ],
     ],
-    'behaviours'    => [
+    'behaviors'    => [
         Swiper::BEHAVIOUR_PAGINATION,
         Swiper::BEHAVIOUR_NEXT_BUTTON,
         Swiper::BEHAVIOUR_PREV_BUTTON

@@ -67,8 +67,8 @@ echo Swiper::widget( [
       ]
     ]
   ],
-  'behaviours' => [
-    'parallax' // Declare behaviour "parallax"
+  'behaviors' => [
+    'parallax' // Declare behavior "parallax"
   ],
   'parallaxOptions' => [ // Configuring parallax
     'background' => 'http://placehold.it/2536x1080',

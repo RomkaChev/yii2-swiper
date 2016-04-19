@@ -67,7 +67,7 @@ echo Swiper::widget( [
       ]
     ]
   ],
-  'behaviours' => [
+  'behaviors' => [
     'parallax' // Объявление поведения "параллакс"
   ],
   'parallaxOptions' => [ // Настраиваем параллакс
