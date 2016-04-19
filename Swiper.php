@@ -314,23 +314,6 @@ class Swiper extends Widget
      */
     const BEHAVIOR_RTL = 'rtl';
 
-
-    /*public function behaviors()
-    {
-        return [
-            'editor-panel' => [
-                'class' => PanelBehavior::className(),
-                'item'  => [
-                    'group' => self::className(),
-                    'label' => 'moserfoser',
-                    'view'  => [
-                        'alias' => '@app/views/pii/default.php',
-                        'param' => ['wurst' => 'brot']
-                    ]
-                ]
-            ]
-        ];
-    }*/
     /**
      * This function is batch-wrapper of \romkaChev\yii2\swiper\Swiper::addItem
      *
