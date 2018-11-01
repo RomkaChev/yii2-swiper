@@ -2,7 +2,7 @@
 namespace romkaChev\yii2\swiper;
 
 use romkaChev\yii2\swiper\helpers\SwiperCssHelper;
-use yii\base\Object;
+use yii\base\BaseObject;
 use yii\helpers\ArrayHelper;
 
 /**
@@ -12,7 +12,7 @@ use yii\helpers\ArrayHelper;
  *
  * @package romkaChev\yii2\swiper
  */
-class Slide extends Object
+class Slide extends BaseObject
 {
 
     /**
